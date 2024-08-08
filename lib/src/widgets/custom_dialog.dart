@@ -33,7 +33,15 @@ class CustomAlertDialog extends StatelessWidget {
       children.add(new Padding(
         padding: titlePadding!,
         child: new DefaultTextStyle(
-          style: Theme.of(context).textTheme.headline6!,
+          style: TextStyle(
+            inherit: true,
+            color: Colors.black87, // Typically black with 87% opacity
+            fontSize: 20.0,
+            fontWeight: FontWeight.w500,
+            fontFamily: 'Roboto',
+            letterSpacing: 0.15,
+            textBaseline: TextBaseline.alphabetic,
+          ),
           child: new Semantics(child: title, namesRoute: true),
         ),
       ));
@@ -43,7 +51,15 @@ class CustomAlertDialog extends StatelessWidget {
       child: new Padding(
         padding: contentPadding,
         child: new DefaultTextStyle(
-          style: Theme.of(context).textTheme.subtitle1!,
+          style: TextStyle(
+            inherit: true,
+            color: Colors.black87, // Typically black with 87% opacity
+            fontSize: 16.0,
+            fontWeight: FontWeight.w400,
+            fontFamily: 'Roboto',
+            letterSpacing: 0.15,
+            textBaseline: TextBaseline.alphabetic,
+          ),
           child: content,
         ),
       ),

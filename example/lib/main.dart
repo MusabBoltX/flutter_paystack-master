@@ -174,11 +174,26 @@ class _HomePageState extends State<HomePage> {
                         .copyWith(secondary: green),
                     primaryColorLight: Colors.white,
                     primaryColorDark: navyBlue,
-                    textTheme: Theme.of(context).textTheme.copyWith(
-                          bodyText2: TextStyle(
-                            color: lightBlue,
-                          ),
-                        ),
+                    textTheme: TextTheme(
+                      bodyText2: TextStyle(
+                        inherit: true,
+                        color: Colors.black87,
+                        // Typically black with 87% opacity
+                        fontSize: 14.0,
+                        fontWeight: FontWeight.w400,
+                        fontFamily: 'Roboto',
+                        textBaseline: TextBaseline.alphabetic,
+                      ),
+                      // TextStyle(
+                      //   inherit: true,
+                      //   color: Colors.black87,
+                      //   // Typically black with 87% opacity
+                      //   fontSize: 14.0,
+                      //   fontWeight: FontWeight.w400,
+                      //   fontFamily: 'Roboto',
+                      //   textBaseline: TextBaseline.alphabetic,
+                      // ),
+                    ),
                   ),
                   child: Builder(
                     builder: (context) {

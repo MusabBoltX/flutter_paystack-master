@@ -177,7 +177,7 @@ class _CheckoutWidgetState extends BaseState<CheckoutWidget>
             maxLines: 1,
             overflow: TextOverflow.ellipsis,
             style: TextStyle(
-                color: Theme.of(context).textTheme.bodySmall?.color,
+                color: Colors.indigo,
                 fontSize: 12.0),
           ),
         if (!widget.hideAmount && !_charge.amount.isNegative)
@@ -190,7 +190,7 @@ class _CheckoutWidgetState extends BaseState<CheckoutWidget>
                 'Pay',
                 style: TextStyle(
                     fontSize: 14.0,
-                    color: Theme.of(context).textTheme.headline1?.color),
+                    color: Colors.indigo),
               ),
               SizedBox(
                 width: 5.0,
@@ -200,7 +200,7 @@ class _CheckoutWidgetState extends BaseState<CheckoutWidget>
                   Utils.formatAmount(_charge.amount),
                   style: TextStyle(
                     fontSize: 15.0,
-                    color: Theme.of(context).textTheme.headline6?.color,
+                    color: Colors.blue,
                     fontWeight: FontWeight.bold,
                   ),
                 ),
