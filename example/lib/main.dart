@@ -25,6 +25,25 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return new MaterialApp(
       title: appName,
+      theme: ThemeData(
+        textTheme: TextTheme(
+          displayLarge: TextStyle(color: Colors.red),
+          displayMedium: TextStyle(color: Colors.orange),
+          displaySmall: TextStyle(color: Colors.yellow),
+          headlineLarge: TextStyle(color: Colors.green),
+          headlineMedium: TextStyle(color: Colors.blue),
+          headlineSmall: TextStyle(color: Colors.indigo),
+          titleLarge: TextStyle(color: Colors.purple),
+          titleMedium: TextStyle(color: Colors.pink),
+          titleSmall: TextStyle(color: Colors.brown),
+          labelLarge: TextStyle(color: Colors.cyan),
+          labelMedium: TextStyle(color: Colors.lime),
+          labelSmall: TextStyle(color: Colors.amber),
+          bodyLarge: TextStyle(color: Colors.teal),
+          bodyMedium: TextStyle(color: Colors.grey),
+          bodySmall: TextStyle(color: Colors.black),
+        ),
+      ),
       darkTheme: ThemeData.dark(),
       home: new HomePage(),
     );
