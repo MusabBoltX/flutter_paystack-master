@@ -176,9 +176,7 @@ class _CheckoutWidgetState extends BaseState<CheckoutWidget>
             key: Key("ChargeEmail"),
             maxLines: 1,
             overflow: TextOverflow.ellipsis,
-            style: TextStyle(
-                color: Colors.indigo,
-                fontSize: 12.0),
+            style: TextStyle(color: Colors.indigo, fontSize: 12.0),
           ),
         if (!widget.hideAmount && !_charge.amount.isNegative)
           Row(
@@ -189,8 +187,9 @@ class _CheckoutWidgetState extends BaseState<CheckoutWidget>
               Text(
                 'Pay',
                 style: TextStyle(
-                    fontSize: 14.0,
-                    color: Colors.indigo),
+                  fontSize: 14.0,
+                  color: Colors.indigo,
+                ),
               ),
               SizedBox(
                 width: 5.0,
@@ -256,8 +255,10 @@ class _CheckoutWidgetState extends BaseState<CheckoutWidget>
           isScrollable: true,
           unselectedLabelColor: context.colorScheme().onBackground,
           labelColor: accentColor,
-          labelStyle:
-              new TextStyle(fontSize: 14.0, fontWeight: FontWeight.w500),
+          labelStyle: new TextStyle(
+            fontSize: 14.0,
+            fontWeight: FontWeight.w500,
+          ),
           indicator: new ShapeDecoration(
             shape: RoundedRectangleBorder(
                   borderRadius: tabBorderRadius,
